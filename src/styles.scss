@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+$dark-primary: #1E213A;
+
+$dark-text: #E7E7EB;
+
+$text-color: $dark-text;
+
+@mixin font-normal {
+  font: {
+    family: 'Raleway', sans-serif;
+    size: 16px;
+    weight: 500;
+  }
+}
