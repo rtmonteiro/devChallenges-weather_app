@@ -1,12 +1,12 @@
 <div class="card">
   <div class="card__header">
-    <p>Tommorow</p>
+    <span>{{weatherStatus.date}}</span>
   </div>
   <div class="card__content">
-    <img src="/assets/img/{{iconType}}.png" alt="" srcset="">
+    <img src="/assets/img/{{weatherStatus.iconType}}.png" alt="" srcset="">
   </div>
   <div class="card__sub-content">
-    <span class="max-temp">16ºC</span>
-    <span class="min-temp">11ºC</span>
+    <span class="max-temp">{{weatherStatus.minTemperature | temperature:unit }}</span>
+    <span class="min-temp">{{weatherStatus.maxTemperature | temperature:unit }}</span>
   </div>
 </div>

@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CardShowStatusComponent } from './components/card-show-status/card-show-status.component';
+import { ComponentsModule } from './components/component.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardShowStatusComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
