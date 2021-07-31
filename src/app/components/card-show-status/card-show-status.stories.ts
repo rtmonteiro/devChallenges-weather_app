@@ -1,8 +1,8 @@
 import { moduleMetadata } from '@storybook/angular';
 import { Meta, Story } from '@storybook/angular/types-6-0';
-import { PipeModule } from 'src/app/pipe/pipe.module';
 import {CardShowStatusComponent, EWeatherIcon} from './card-show-status.component';
 import {withKnobs} from '@storybook/addon-knobs';
+import {ComponentsModule} from '../component.module';
 
 export default {
   title: 'Components/CardShowStatus',
@@ -10,7 +10,7 @@ export default {
   decorators: [
     withKnobs,
     moduleMetadata({
-      imports: [PipeModule]
+      imports: [ComponentsModule]
     })
   ]
 } as Meta;
