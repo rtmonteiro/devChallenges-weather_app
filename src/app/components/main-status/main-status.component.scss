@@ -1,0 +1,45 @@
+@use '/src/styles' as styles;
+@use "sass:color";
+
+.status {
+  height: 100vh;
+  width: 100vw;
+  max-width: 459px;
+  padding: 42px 46px;
+  background: url("~src/assets/img/Cloud-background.png") 100px center repeat,
+    no-repeat styles.$dark-primary;
+
+  &__top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__btn {
+    background-color: styles.$grey-30;
+    box-shadow: 0 4px 4px 0 #00000040;
+
+    color: styles.$grey-10;
+    @include styles.font-normal;
+    transition: background-color 150ms ease-in-out;
+    &:hover {
+      background-color: color.adjust(styles.$grey-30, $lightness: 5%);
+    }
+    &:active, &:focus {
+      background-color: color.adjust(styles.$grey-30, $lightness: -10%);
+    }
+  }
+  &__search {
+    padding: 10px 18px;
+    border-radius: 0;
+  }
+  &__gps {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center center;
+    svg {
+      fill: styles.$grey-10;
+    }
+  }
+}

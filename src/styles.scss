@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;600;700&display=swap');
-
+@import "colors";
 * {
   margin: 0;
   padding: 0;
@@ -11,9 +11,15 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-$dark-primary: #1E213A;
+button {
+  border: none;
+  cursor: pointer;
+}
 
-$dark-text: #E7E7EB;
+
+$dark-primary: $dark-blue-1;
+
+$dark-text: $grey-10;
 
 $text-color: $dark-text;
 
